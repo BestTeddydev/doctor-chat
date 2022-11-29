@@ -1,0 +1,48 @@
+{
+  "hospitals": [
+    { "id": 1, "hospName": "hospital 1", 
+    "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", 
+    "doctorsId":[1,2],
+    "src":"https://www.shutterstock.com/image-vector/medical-concept-hospital-building-doctor-260nw-588196298.jpg"
+   },
+    { 
+      "id": 2, "hospName": "hospital 2", 
+    "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", 
+    "doctorsId":[1],
+    "src":"/hospital_example.jpg" 
+  },
+  { "id": 3, "hospName": "hospital 3", 
+    "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", 
+    "doctorsId":[1],
+    "src":"https://www.shutterstock.com/image-vector/medical-concept-hospital-building-doctor-260nw-588196298.jpg"
+   },
+    { 
+      "id": 4, "hospName": "hospital 4", 
+    "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", 
+    "doctorsId":[1],
+    "src":"/hospital_example.jpg" 
+  },
+  { "id": 5, "hospName": "hospital 5", 
+    "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", 
+    "doctorsId":[1],
+    "src":"https://www.shutterstock.com/image-vector/medical-concept-hospital-building-doctor-260nw-588196298.jpg"
+   },
+    { 
+      "id": 6, "hospName": "hospital 6", 
+    "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", 
+    "doctorsId":[1],
+    "src":"/hospital_example.jpg" 
+  }
+  ],
+  "doctors": [
+    { "id": 1, "username":"doctor","password":"doctor1","role":"doctor","firstName":"doctor 1","lastName":"lastname 1","department":"จักษุ"},
+    { "id": 2, "username":"doctor","password":"doctor2","role":"doctor","firstName":"doctor 2","lastName":"lastname 2","department":"สายตา"}
+  ],
+  "chats": [
+    {
+      "receiveId":1,
+      "sender":1,
+      "message":""
+    }
+  ]
+}
