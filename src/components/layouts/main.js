@@ -6,8 +6,10 @@ function MainLayout({ children }) {
   return (
     <div>
       <Header />
-        {children}
-      <Footer />
+      {children}
+      {/* <div>
+        <Footer />
+      </div> */}
     </div>
   );
 }

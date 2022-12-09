@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { hospitalById } from "../../action/hospitalAction";
-import { fetchsUser } from "../../action/userAction";
+import { fetchsDoctors } from "../../action/doctorAction";
 
 import DoctorAvatar from "../home/doctorAvatar";
 import MainLayout from "../layouts/main";
@@ -12,7 +12,7 @@ function Detail() {
 
   const fechHospital = async (id) => {
     const hospital = await hospitalById(id);
-    const respUser = await fetchsUser();
+    const respUser = await fetchsDoctors();
 
     setHospital(hospital);
     setUsers(respUser);
@@ -39,9 +39,15 @@ function Detail() {
               </div>
             </div>
             <p>{hospital.description}</p>
-            <div className="flex w-48">
+            <div className="grid grid-flow-col auto-cols-max">
               {hospital.doctorsId.map((doctor) => (
-                <DoctorAvatar users={users} doctorId={doctor} isDetail={true} />
+                <div className="w-96">
+                  <DoctorAvatar
+                    users={users}
+                    doctorId={doctor}
+                    isDetail={true}
+                  />
+                </div>
               ))}
             </div>
           </div>

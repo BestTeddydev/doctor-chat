@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchHospitals } from "../../action/hospitalAction";
 import MainLayout from "../layouts/main";
 import { useNavigate } from "react-router-dom";
-import { fetchsUser } from "../../action/userAction";
+import { fetchsDoctors } from "../../action/doctorAction";
 import DoctorAvatar from "./doctorAvatar";
 
 function HomePage() {
@@ -11,7 +11,7 @@ function HomePage() {
   const [users, setUsers] = useState([]);
   const fetchsData = async () => {
     const resp = await fetchHospitals();
-    const respUser = await fetchsUser();
+    const respUser = await fetchsDoctors();
 
     setHospitals(resp);
     setUsers(respUser);
@@ -38,7 +38,10 @@ function HomePage() {
                   <DoctorAvatar users={users} doctorId={doctor} />
                 ))}
               </div>
-              <button onClick={() => navigate(`/detail/${hospital.id}`)} className="underline">
+              <button
+                onClick={() => navigate(`/detail/${hospital.id}`)}
+                className="underline"
+              >
                 รายละเอียด
               </button>
             </div>
